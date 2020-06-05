@@ -1,5 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// const -> block
+// let -> block
 
-const element = <h1>Hello World!</h1>;
-ReactDOM.render(element, document.getElementById("root"));
+const person = {
+  name: "Björn",
+  walk() {
+    console.log(this);
+  },
+};
+
+const walk = person.walk.bind(person);
+walk();
