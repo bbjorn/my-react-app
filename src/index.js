@@ -1,8 +1,5 @@
-import Teacher, { promote } from "./teacher";
-import Reach, { Component } from "react";
+import React from "react";
+import ReactDOM from "react-dom";
 
-// Default -> import ... from '';
-// Named -> import { ... } from '';
-
-const teacher = new Teacher("Mosh", "MSc");
-teacher.teach();
+const element = <h1>Hello World!</h1>;
+ReactDOM.render(element, document.getElementById("root"));
